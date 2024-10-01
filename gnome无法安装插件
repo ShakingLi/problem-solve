@@ -1,0 +1,14 @@
+# 问题描述：
+
+本人使用的是manjaro+gnome的系统，在想安装gnome插件时，遇到这样的问题：无论在extensions.gnome.org上安装，还是使用yay等方式，始终无法安装插件，点击图片上的按钮显示on后，一刷新就会重新变为off
+
+![image-20241002022429906](/home/xuejian/.config/Typora/typora-user-images/image-20241002022429906.png)
+
+# 解决办法：
+
+在`$HOME/.local/share/gnome-shell`目录下新建文件夹`extensions`，然后再安装插件，问题解决
+
+```bash
+mkdir $HOME/.local/share/gnome-shell/extensions
+```
+
